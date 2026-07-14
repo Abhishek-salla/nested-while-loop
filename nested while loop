@@ -1,0 +1,20 @@
+# Nested While Loop Assignment
+# Purpose:
+# This program demonstrates the use of nested while loops.
+# The outer while loop controls the number of rows,
+# and the inner while loop prints numbers from 1 up to the current row.
+
+# Get the number of rows from the user
+rows = int(input("Enter the number of rows: "))
+
+i = 1  # Outer loop variable
+
+while i <= rows:
+    j = 1  # Inner loop variable
+
+    while j <= i:
+        print(j, end=" ")
+        j += 1
+
+    print()  # Move to the next line
+    i += 1
